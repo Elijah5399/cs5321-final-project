@@ -46,18 +46,18 @@ Each device is hosted individually on a virtual machine
 2. On DHCP Server, remove the lease given by dhcp server
     - `sudo rm /var/lib/dhcp/dhcpd.leases`
 3. On Verification server remove the initial signature.json (if exist)
-    - `sudo rm ~/simulated/signatures.json`
+    - `sudo rm ~/Desktop/signatures.json`
 4. Start the script in the following order
-    - Verification  server `“sudo ~/simulated/python3 phase_1.py”`
+    - Verification  server `“sudo ~/Desktop/veri_simulated.py”`
     - DHCP Server: `sudo systemctl start isc-dhcp-server`
-    - DHCP Server: `sudo python3 ~/simulated/dhcp_watcher.py`
+    - DHCP Server: `sudo python3 ~/Desktop/dhcp_simulated.py`
 5. On the Host A Machine
     - While Host A is on, it will request for DHCP from the DHCP Server, and you will see an update on the DHCP Server script & verification server script
 
 ## Phase 2 (ARP Phase)
 To show that those that are not given by DHCP Server will be rejected
-1. On Host B: `sudo python3 ~/simulated/phase_2.py`
-2. On Host A: `sudo python3 ~/simulated/phase_2.py`
+1. On Host B: `sudo python3 ~/Desktop/host_b.py`
+2. On Host A: `sudo python3 ~/Desktop/phase_2_finalised.py`
     - It will ask for an ip address. Key in Host B current static IP Address: `192.168.56.107`
     - We will see that it is rejected
 3. On Host B we change the network to DHCP & check for IP address assigned to it. 
