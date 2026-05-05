@@ -65,5 +65,5 @@ To show that those that are not given by DHCP Server will be rejected
 
 
 # Simulation link
-If you would like to try the simulation yourself, you may download the OVA file below (Only available to people in NUS)
+If you would like to try the simulation yourself, you may download the OVA file below (Only available to people in NUS). The login password to the virtual machines is "123"
 https://nusu-my.sharepoint.com/:u:/g/personal/e1122698_u_nus_edu/IQA0AeZ_yTTgSZwT3BiKUAXlAUTAL0rjh3KsYx88BupOCxs?e=owSZ5e
