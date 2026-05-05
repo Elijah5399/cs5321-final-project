@@ -62,3 +62,8 @@ To show that those that are not given by DHCP Server will be rejected
     - We will see that it is rejected
 3. On Host B we change the network to DHCP & check for IP address assigned to it. 
 4. On Host A: we key in the newly assigned ip address given to Host B, we we will see that it is accepted.
+
+
+# Simulation link
+If you would like to try the simulation yourself, you may download the OVA file below (Only available to people in NUS)
+https://nusu-my.sharepoint.com/:u:/g/personal/e1122698_u_nus_edu/IQA0AeZ_yTTgSZwT3BiKUAXlAUTAL0rjh3KsYx88BupOCxs?e=owSZ5e
